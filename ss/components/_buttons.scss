@@ -1,0 +1,16 @@
+button {
+	@include size(em(200px) em(50px));
+	color: $color-white;
+	background-color: $color-dodgerblue;
+	font: normal normal $default-font-weight em(16px)/em(50px) $title-font;
+
+	border: 0;
+	border-radius: 1px;
+
+	outline: none;
+	text-transform: uppercase;
+
+	@include transition(all $animation-duration $animation-timing);
+
+	&:hover { background-color: shade($color-dodgerblue, 70%); }
+}

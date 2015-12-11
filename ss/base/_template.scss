@@ -1,0 +1,14 @@
+@mixin full-screen {
+	@include size(100% 100%);
+	min-height: 100%;
+	margin: 0;
+}
+
+@mixin vertical-parent {
+  @include transform-style(preserve-3d);
+}
+
+@mixin vertical-center {
+  @include position(relative, 50% null null null);
+  @include transform(translateY(-50%));
+}
