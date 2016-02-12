@@ -4,7 +4,7 @@
 .row { @include row(); }
 
 .container {
-	width: 860px;	
+	width: em(800px);	
 	@include outer-container(90%);
 	@include margin(0 auto);
 }

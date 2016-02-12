@@ -1,2 +1,2 @@
-#TODO
-Add images here
+##What is this folder?
+Images belong in this folder
