@@ -13,6 +13,10 @@
   @include transform(translateY(-50%));
 }
 
+.vertical-center {
+	@include vertical-center;
+}
+
 @mixin font-sw($args...) {
 	// IF length == 1: $size
 	// IF length == 2: $size, $weight
@@ -25,4 +29,8 @@
 		font-size: nth($args, 1);
 		font-weight: nth($args, 2);
 	}
+}
+
+%transition {
+	@include transition(all $animation-duration $animation-timing);
 }

@@ -13,7 +13,7 @@ button {
 	outline: none;
 	text-transform: uppercase;
 
-	@include transition(all $animation-duration $animation-timing);
+	@extend %transition;
 
 	&:hover { background-color: shade($color-dodgerblue, 10%); }
 }

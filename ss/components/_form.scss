@@ -1,9 +1,9 @@
 // Form.scss
 
 input {
-	@include size(em(480px) em(55px));
+	@include size(em(480px) em(50px));
 	@include margin(0 auto);
-	@include padding(0 auto);
+	@include padding(0 em(24px));
 	
 	color: $color-black;
 	background-color: $color-white;
@@ -17,5 +17,5 @@ input {
 	text-align: left;
 	outline: none;
 
-	@include transition(all $animation-duration $animation-timing);
+	@extend %transition;
 }
