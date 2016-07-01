@@ -1,0 +1,46 @@
+.partners {
+	@include padding(0 0 em(50px));
+	@include background(#214478);
+
+	header {
+		h2 {
+			@include margin(0 auto);
+		}
+
+		p {
+			@include margin(em(6px) auto 0);
+			color: $color-white;
+			text-align: center;
+			opacity: 0.8;
+		}
+	}
+
+	.container {
+		@include margin(em(35px) auto 0);
+	}
+
+	a.partner {
+		@include size(auto em(175px));
+		@include span-columns(4);
+		// @include padding(0 em(15px));
+
+		div {
+			@include size(100%);
+		}
+	}
+
+	#younghackers {
+		@include background(url(../images/partners/younghackers.png) no-repeat center center);
+		background-size: contain;
+	}
+
+	#riseny {
+		@include background(url(../images/partners/riseny.png) no-repeat center center);
+		background-size: contain;
+	}
+	
+	#mlh {
+		@include background(url(../images/partners/mlh.svg) no-repeat center center);
+		background-size: contain;
+	}
+}

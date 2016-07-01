@@ -1,0 +1,5 @@
+footer {
+	@include background(#0f1e35);
+	@include padding(em(25px) 0);
+	text-align: center;
+}

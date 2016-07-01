@@ -1,0 +1,33 @@
+html, body {
+	@include full-screen;
+	@include zero-box;
+}
+
+.display-none {
+	display: none;
+	@include transition(175ms);
+}
+
+.visible-none {
+	opacity: 0;
+	@include transition(175ms);
+}
+
+header {
+	@include padding(em(50px) 0 em(20px) 0);
+
+	h2 {
+		color: $color-white;
+		font-family: $body-font;
+		@include font-sw(em(36px), 400);
+		text-align: center;
+	}
+}
+
+header.funsize {
+	padding-bottom: 0;
+
+	h2 {
+		@include margin(0 auto em(5px));
+	}
+}

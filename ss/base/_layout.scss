@@ -1,0 +1,29 @@
+// start _layout.scss
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	// Fallback
+	background-color: $color-vulcan--primary;
+
+	overflow: hidden;
+}
+
+.container {
+	width: 80%;
+	max-width: em(800px);
+	margin: 0 auto;
+
+	@media screen and (max-width: $bp-lg) {
+		width: 90%;
+	}
+
+	@media screen and (max-width: $bp-md) {
+		width: 100%;
+	}
+}
+
+// end _layout.scss

@@ -1,0 +1,22 @@
+.sponsors {
+	@include padding(0 0 em(50px));
+	@include background(#2C5AA0);
+	text-align: center;
+
+	p {
+		@include margin(0 auto);
+		color: $color-white;
+		opacity: 0.8;
+		text-align: center;
+	}
+
+	p.interested {
+		@include margin(em(7px) auto 0);
+		opacity: 1;
+		
+		a {
+			color: $color-white;
+			text-decoration: underline;
+		}
+	}
+}

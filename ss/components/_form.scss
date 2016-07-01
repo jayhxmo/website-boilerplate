@@ -1,21 +1,60 @@
-// Form.scss
+// start _form.scss
+form {
+	margin: em(80px) auto 0 auto;
+	font-size: em(18px);
+
+	@media screen and (max-width: $bp-sm) {
+		button {
+			display: block;
+			width: em(480px);
+			margin: em(12px) auto 0 auto;
+		}
+	}
+}
 
 input {
-	@include size(em(480px) em(50px));
-	@include margin(0 auto);
-	@include padding(0 em(24px));
-	
-	color: $color-black;
-	background-color: $color-white;
-	
-	border: 0;
-	border-radius: 1px;
+	vertical-align: top;
 
-	font-family: $title-font;
-	@include font-sw(em(16px), $default-font-weight);
-	
+	width: em(480px);
+	height: em(54px);
+	margin: 0 auto;
+	padding: 0 em(28px);
+
+	font-family: $font-family--primary;
+	font-size: em(14px);
+	font-weight: $font-weight--title;
+	letter-spacing: 0.25em;
+	line-height: em(48px);
 	text-align: left;
-	outline: none;
+	text-transform: uppercase;
 
-	@extend %transition;
+	background-color: $color-white--0;
+	color: $color-black--0;
+
+	border: em(3px) solid $color-white--0;
+	outline: none;
 }
+
+@include placeholder($color-black--2);
+
+.spam {
+	margin: em(16px) auto 0 auto;
+	letter-spacing: 0.125em;
+
+	opacity: 0.33;	
+}
+
+.email-status {
+	margin: em(12px) auto 0 auto;
+	letter-spacing: 0.125em;
+
+	&.success {
+		color: $color-blue--primary;
+	}
+
+	&.failure {
+		color: $color-red--primary;
+	}
+}
+
+// end _form.scss

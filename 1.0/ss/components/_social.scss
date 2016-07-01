@@ -1,0 +1,19 @@
+// _social.scss
+.social {
+    a {
+        margin: 0 em(10px);
+        color: $color-white;
+        font-size: em(24px);
+        @include transition(200ms);
+	    
+	    $social-colors: #388E3C #3b5998 #55acee #555;
+
+	    @for $index from 1 through length($social-colors) {
+	  		$color: nth($social-colors, $index);
+	  		
+	  		&:nth-child(#{$index}):hover {
+		  		color: $color;
+	  		}
+	  	}    
+    }
+}

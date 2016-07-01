@@ -1,0 +1,19 @@
+.about {
+	@include background(linear-gradient(#003380, #003380));
+	@include padding(em(50px) 0 em(125px));
+
+	p {
+		max-width: 100%;
+		width: em(600px);
+		@include margin(0 auto);
+		color: $color-white;
+		opacity: 0.8;
+		text-align: center;
+	}
+
+	p.motto {
+		@include margin(em(7px) auto 0);
+		opacity: 1;
+		text-align: center;
+	}
+}

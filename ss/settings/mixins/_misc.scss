@@ -1,0 +1,38 @@
+// start _misc.scss
+
+@mixin default3D {
+	box-shadow: 0 em(22px) em(40px) rgba(0, 0, 0, 1);
+}
+
+.hover {
+	@include default3D;
+}
+
+@mixin placeholder($color) {
+	::-webkit-input-placeholder {
+	   color: $color;
+	}
+
+	:-moz-placeholder {
+	   color: $color;  
+	}
+
+	::-moz-placeholder {
+	   color: $color;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: $color;  
+	}
+}
+
+@mixin noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;  
+}
+
+// end _misc.scss

@@ -1,0 +1,26 @@
+button {
+	@include size(em(175px) em(42px));
+	@include margin(0 auto);
+
+	color: $color-white;
+	background-color: $color-dodgerblue;
+
+	font-family: $body-font;
+	@include font-sw(em(16px), 400);
+
+	border: 0;
+	border-radius: 1px;
+
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: top;
+	outline: none;
+
+	box-shadow: 0 em(5px) em(7px) $color-dodgerblue;
+	@extend %transition;
+	
+	&:hover {
+		background-color: lighten($color-dodgerblue, 4%);
+		box-shadow: 0 em(7px) em(15px) #33a2ff;
+	}
+}

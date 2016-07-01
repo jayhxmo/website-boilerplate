@@ -1,3 +1,10 @@
-@import "lib/bourbon";
+// start main.scss
+
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../bower_components/neat/app/assets/stylesheets/_neat.scss";
+
+@import "settings/settings";
 @import "base/base";
-@import "components/all";
+@import "components/components";
+
+// end main.scss

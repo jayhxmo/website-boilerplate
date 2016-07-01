@@ -1,0 +1,72 @@
+.faq {
+	background: url(../images/city.svg) center bottom no-repeat, linear-gradient(#003380, #0052cc, #66a4ff 80%, #ffb402);
+	background-size: auto 33%, 100% 100%;
+	@include padding(em(75px) 0 12%);
+	
+	@include media(max-width em(1000px)) {
+		@include padding(5% 0 30%);
+	}
+
+	.faq-nav {
+		@includem margin(0 auto));
+		@include padding(0 em(10px) em(100px));
+		
+		div {
+			@include span-columns(3);
+			@include padding(em(15px) 0);
+
+			color: $color-white;
+			background: rgba(255, 255, 255, 0.15);
+
+			font-family: $body-font;
+			@include font-sw(em(18px), 400);
+
+			text-align: center;
+			@include transition(175ms);
+
+			&:hover {
+				background: rgba(255, 255, 255, 0.33);
+			}
+
+			&.active {
+				background: rgba(255, 255, 255, 0.33);
+			}
+		}
+	}
+
+	.container {
+		#faqrow-1, #faqrow-2, #faqrow-3, #faqrow-4 {
+			@include transition(175ms);
+		}
+		
+		.block {
+			@include span-columns(4);
+			@include padding(0 em(10px));
+
+			@include media(max-width em(1000px), 12) {
+				@include span-columns(6);
+		    }
+
+		    @include media(max-width em(720px), 12) {
+				@include span-columns(12);
+		    }
+
+			h2.question {
+				color: $color-white;
+				@include margin(0 0 em(3px) 0);
+				@include font-sw(em(28px), 400);
+			}
+
+			p.answer {
+				color: $color-alto;
+				@include margin(0 0 em(25px));
+				@include font-sw(em(18px), 400);
+			}
+		}
+	}
+
+	a {
+		color: $color-white;
+		text-decoration: underline;
+	}
+}

@@ -1,5 +1,6 @@
-@import "normalize";
-@import "variables";
-@import "template";
-@import "initialize";
+// start _base.scss
+
+@import "layout";
 @import "typography";
+
+// end _base.scss
